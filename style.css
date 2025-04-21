@@ -4,30 +4,75 @@
     flex-direction: row;
 }
 .character-card{
-    border: solid 1px black;
+    border: solid 2px #00ffeb;
     margin: 20px;
     padding: 15px;
     width: 400px;
     height: 700px;
     font-size: 20px;
+    background-color: #686868;
 }
 .character-card > img{
     width: 200px;
     height: 200px;
 }
 .button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* 綠色背景 */
+    color: white;              /* 白色文字 */
+    text-decoration: none;     /* 去掉超連結底線 */
+    border: none;
+    border-radius: 8px;
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.button1 {background-color: #04AA6D;}
-.mid{
+.button:hover {
+    background-color: #45a049; /* 滑鼠移上去的顏色 */
+    text-decoration: none;     /* 去掉超連結底線 */
+}
 
+.button1 {background-color: #686868;}
+
+.header {
+    background-color: #686868;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+body {
+    margin: 0;
+    background-image: url('pexels-felixmittermeier-956999.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+a {
+    color: #32ffd1;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+a:visited {
+    color: #ffffff;
+}
+a:active {
+    color: #ff9900;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
